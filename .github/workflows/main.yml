@@ -28,7 +28,7 @@ jobs:
       - name: Build, tag, and push Docker image
         env:
           ECR_REGISTRY: ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com
-          ECR_REPOSITORY: reactpace
+          ECR_REPOSITORY: csit-pace-devops
           IMAGE_TAG: latest
         run: |
           # Build and tag the image directly for ECR
